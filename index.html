@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+            <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
+    
+            <select name="status" id="status">
+                <option value="pending">Pendiente</option>
+                <option value="completed">Completed</option>
+            </select>
+    
+            <button onclick="agregarTarea()">Agregar Tarea</button>
+
+            <div class="tasks">
+                <ul id="listaTareas">
+                    <div class="btn">
+                        <button class="completedbtn" onclick="mostrarCompletadas()">Mostrar Completadas</button>
+                        <button class="pendingbtn" onclick="mostrarPendientes()">Mostrar Pendientes</button>
+                    </div>
+                </ul>
+            </div>
+            
+    </div>
+
+        <script src="assets/js/script.js"></script>
+</body>
+</html>
